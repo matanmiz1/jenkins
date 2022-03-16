@@ -3,7 +3,7 @@ pipeline {
   agent any
   
   parameters {
-    	choice(choices: ['us', 'eu', 'jp', 'au', 'ca', 'uk'], description: 'AWS region', name: 'region', defaultValue: 'uk') 
+    	string(defaultValue: "default", description: 'time zone, default depends on region ot previous group vars', name: 'tz')
   }
   stages {
     
