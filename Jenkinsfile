@@ -3,7 +3,7 @@ pipeline {
   agent any
   
   parameters {
-    	choice(choices: ['us', 'eu', 'jp', 'au', 'ca', 'uk'], description: 'AWS region', name: 'region') 
+    	choice(choices: ['us', 'eu', 'jp', 'au', 'ca', 'uk'], description: 'AWS region', name: 'region', defaultValue: 'uk') 
   }
   stages {
     
